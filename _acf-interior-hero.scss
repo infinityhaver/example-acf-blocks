@@ -1,0 +1,58 @@
+.interior-hero-wrap {
+	@media (min-width: 768px) {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+	@media (max-width: 768px) {
+		
+	}
+	.interior-hero-left {
+		@media (min-width: 768px) {
+			width: calc(100% - 371px);
+		}
+		@media (max-width: 768px) {
+			padding: 75px 25px;
+		}
+		&.interior-hero-video-left {
+			@media (max-width: 768px) {
+				padding: 0;
+				.interior-hero-left-inner {
+					padding: 25px;
+				}
+			}
+		}
+		.interior-hero-left-inner {
+			@media (min-width: 768px) {
+				max-width: 601px;
+				padding-left: 100px;
+				height: 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+			}
+			@media (max-width: 768px) {
+				
+			}
+			h1.interior-hero-heading {
+				@media (max-width: 768px) {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.interior-hero-right {
+		@media (min-width: 768px) {
+			width: 371px;
+			padding: 50px;
+		}
+		@media (max-width: 768px) {
+			padding: 50px 25px;
+		}
+		h5,
+		h6 {
+			font-family: 'Lato-Black';
+			text-transform: uppercase;
+		}
+	}
+}
